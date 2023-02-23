@@ -1,7 +1,6 @@
 {
   "name": "wizardnews",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -9,10 +8,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.14.7"
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "express": "^4.16.2",
     "morgan": "^1.10.0"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calliecassan/WizardNews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calliecassan/WizardNews/issues"
+  },
+  "homepage": "https://github.com/calliecassan/WizardNews#readme",
+  "description": ""
 }
