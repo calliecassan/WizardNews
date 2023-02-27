@@ -15,4 +15,14 @@ const data = [
     { id: 14, upvotes: 10, title: "Dignissim Mauris Ac Dapibus", content: "Phasellus dignissim mauris ac dapibus aliquet. Pellentesque congue nibh rutrum, fringilla arcu eu, dignissim est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam non ligula eleifend, interdum erat a, ornare nulla. Nunc in aliquam ex, non maximus ipsum. Praesent varius metus vitae nibh rutrum.", name: "Avile", date: new Date() }
   ];
 
-  module.exports = {list:this.list, find:find};
+  const list = () => {
+    return [...data]
+  };
+
+  const find = (id) => {
+    const post = data.find(post => post.id === Number(id));
+    return {...post};
+  }
+
+
+  module.exports = {list, find};
